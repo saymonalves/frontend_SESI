@@ -1,5 +1,5 @@
 body{
-    background-color: #00000082;
+    background-color: #000000;
     color: #ffffff;
     font-family: 'Segoe UI', sans-serif;
     display: flex;
@@ -7,36 +7,36 @@ body{
 }
 .container{
     width: 400px;
-    background-color: #0c0c0c;
+    background-color: #000000;
     padding: 20px;
     border-radius: 10px;
-    border: 1PX solid #333;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1PX solid #000000;
+    box-shadow: 0 10px 30px rgba(4, 255, 0, 0.881);
 }
 
 h1{
-    color: #00ff88;
+    color: #2efa0a;
     text-align: center;
 }
 
 h3{
-    color: #00d4ff;
-    border-bottom: 1px solid #333;
+    color: #ffffff;
+    border-bottom: 1px solid #000000;
     padding-bottom: 5px;
 }
 
 .card {
-    background: #252525;
+
     padding: 15px;
     border-radius: 5px;
-    border-left: 5px solid #00ff88;
+ 
 }
 
 button{
     width: 100%;
     padding: 15px;
     margin-top: 20px;
-    background-color: #00ff88;
+    background-color: #2fff00;
     border: none;
     border-radius: 5px;
     font-weight: bold;
@@ -45,7 +45,8 @@ button{
 }
 
 button:hover{
-    background-color: #54da9c;
+    background-color: #008407;
+    color: #ffffff;
 }
 
 ul{
@@ -64,8 +65,14 @@ input, select{
     padding: 10px;
     margin: 8px 0;
     border-radius: 5px;
-    border: 1px solid #444;
+    border: 1px solid #37ff00;
+    background-color: #000000;
     color: white;
     box-sizing: border-box;
+}
+hr{
+   border: 0;
+   border-top: lpx solid #000000;
+   margin: 20px 0; 
 }
 
