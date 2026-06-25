@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore SESI | Finalizar Compra</title>
+    <link rel="stylesheet" href="trabaio.html">
+</head>
+<body>
+
+<div class="container">
+    <h1>TechStore SESI</h1>
+
+    <section class="formulario">
+
+        <h3>Finalizar Compra 🛒</h3>
+
+        <label for="inputNome">Nome do cliente</label>
+        <input type="text" id="inputNome" placeholder="Nome do cliente">
+
+        <label for="inputIdade">Idade</label>
+        <input type="number" id="inputIdade" placeholder="Idade do cliente" min="0">
+
+        <label for="inputCupom">Cupom</label>
+        <select id="inputCupom">
+            <option value="false">Não possui cupom</option>
+            <option value="true">Possui cupom (15% OFF)</option>
+        </select>
+
+        <button id="btnFinalizar" onclick="executarSistema()">
+            Finalizar Venda
+        </button>
+
+    </section>
+
+    <hr>
+
+
+    <section id="feedback">
+
+        <h3>Seu Carrinho</h3>
+
+        <p id="mensagem-autorizacao">Aguardando produtos...</p>
+
+        <ul id="lista-estoque"></ul>
+
+        <div id="relatorio-final" class="card" style="display:none;"></div>
+
+    </section>
+</div>
+
+<script src="final.js"></script>
+
+</body>
+</html>

@@ -332,3 +332,15 @@ footer {
     display: block;
     gap: 40px;
 }
+.final{
+  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+
+}
