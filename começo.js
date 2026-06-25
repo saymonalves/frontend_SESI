@@ -58,9 +58,6 @@ function executarSistema() {
     alert("Venda finalizada com sucesso!");
 
 
-
-    window.location.href = "produtos.html";
-
 }
   
 

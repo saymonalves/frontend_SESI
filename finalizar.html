@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechStore SESI | Finalizar Compra</title>
-    <link rel="stylesheet" href="trabaio.html">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -22,13 +21,16 @@
         <label for="inputIdade">Idade</label>
         <input type="number" id="inputIdade" placeholder="Idade do cliente" min="0">
 
+        <label for="inputValor">Valor da compra</label>
+        <input type="number" id="inputValor" placeholder="Valor da compra">
+
         <label for="inputCupom">Cupom</label>
         <select id="inputCupom">
             <option value="false">Não possui cupom</option>
             <option value="true">Possui cupom (15% OFF)</option>
         </select>
 
-        <button id="btnFinalizar" onclick="executarSistema()">
+        <button id="btnfinalizar" onclick="executarSistema()">
             Finalizar Venda
         </button>
 
@@ -36,14 +38,15 @@
 
     <hr>
 
-
     <section id="feedback">
 
-        <h3>Seu Carrinho</h3>
+        <h3>Resultado</h3>
 
-        <p id="mensagem-autorizacao">Aguardando produtos...</p>
+        <p id="mensagem-autorizacao">Aguardando processamento...</p>
 
-        <ul id="lista-estoque"></ul>
+        <div id="venda-concluida" style="display:none; color:green; font-weight:bold; font-size:18px; margin-top:10px;">
+            ✅ VENDA CONCLUÍDA COM SUCESSO!
+        </div>
 
         <div id="relatorio-final" class="card" style="display:none;"></div>
 

@@ -29,11 +29,39 @@ function executarSistema() {
             msg.style.color = "#ff4444";
             return;
         }
+        if (!nome) {
+            msg.innerText = "Erro: o nome é obrigatório.";
+            msg.style.color = "red";
+            return;
+        }
 
-        // Regra de negócio
+        if (nome.length < 10) {
+            msg.innerText = "Erro: o nome deve ter no mínimo 10 caracteres.";
+            msg.style.color = "red";
+            return;
+        }
+
+        if (isNaN(idade)) {
+            msg.innerText = "Erro: informe uma idade válida.";
+            msg.style.color = "red";
+            return;
+        }
+
+        if (idade > 100) {
+            msg.innerText = "Erro: a idade máxima permitida é 100 anos.";
+            msg.style.color = "red";
+            return;
+        }
+
+        if (isNaN(valor)) {
+            msg.innerText = "Erro: informe um valor válido.";
+            msg.style.color = "red";
+            return;
+        }
+
         if (idade >= 16) {
             msg.innerText = `Venda autorizada: ${nome}`;
-            msg.style.color = "#00ff88";
+            msg.style.color = "green";
 
             // Desconto
             let valorFinal = (valor > 500 || cupom) ? valor * 0.85 : valor;
