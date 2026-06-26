@@ -98,8 +98,7 @@ function validarAcesso() {
     localStorage.setItem("nome", nome);
     localStorage.setItem("idade", idade);
 
-    mensagem.innerText = "Acesso liberado!";
-    mensagem.style.color = "green";
+   
 
-    window.location.href = "trabaio.html";
+   
 }

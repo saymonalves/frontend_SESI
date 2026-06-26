@@ -40,12 +40,7 @@ function executarSistema() {
         return;
     }
 
-
-
-    if (cupom == "true") {
-        valor = valor * 0.85; 
-    }
-
+ 
 
 
     localStorage.setItem("nomeCliente", nome);
@@ -53,9 +48,6 @@ function executarSistema() {
     localStorage.setItem("valorFinal", valor);
     localStorage.setItem("cupom", cupom);
 
-
-
-    alert("Venda finalizada com sucesso!");
 
 
 }
